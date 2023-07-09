@@ -8,6 +8,7 @@ public class TileGenerator : MonoBehaviour
     private List<GameObject> activeTiles = new List<GameObject>();
     private float spawnPos = 0;
     private float tileLength = 100;
+    public Transform startLocation;
 
 
     [SerializeField] private Transform player;
@@ -18,6 +19,8 @@ public class TileGenerator : MonoBehaviour
     {
         for (int i = 0; i < startTiles; i++)
         {
+            if(i == 0)
+                SpawnTile(3);
             SpawnTile(Random.Range(0, tilePrefabs.Length));
         }
     }
