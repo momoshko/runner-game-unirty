@@ -1,2 +1,2 @@
-# runner-game-unirty
+# runner-game-unity
 Runner Game
